@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #fffaed;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+#header nav ul {
+  display: flex;
+  column-gap: 25px;
+}
+#header .menuicon {
+  display: none;
+}
+#header nav ul a {
+  color: black;
+}
+#header nav ul a:hover {
+  background-color: #e9b949;
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+#header .logo {
+  color: black;
+  text-shadow: 3px 3px 4px grey;
+  font-size: 30px;
+}
+#header .logo span {
+  color: #e9b949;
+}
+
+/* BANNER SECTION */
+#hero-banner {
+  background-color: #fffaed;
+  margin-top: 57px;
+}
+#hero-banner .hero-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero-banner .hero-banner .hero-banner-info,
+#hero-banner .hero-banner .hero-banner-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-banner-image .border {
+  width: 200px;
+  border: 2px solid #e9b949;
+  border-radius: 5px;
+}
+.hero-banner-image .border img {
+  width: 200px;
+  border-radius: 5px;
+  position: relative;
+  top: -15px;
+  left: -20px;
+}
+.hero-banner .hero-banner-info {
+  flex-direction: column;
+  row-gap: 30px;
+}
+.hero-banner .hero-banner-info .social-icons ul {
+  display: flex;
+  column-gap: 25px;
+}
+.hero-banner .hero-banner-info .social-icons ul a {
+  color: black;
+}
+.hero-banner .line {
+  border: 2px solid #e9b949;
+  width: 100px;
+}
+.hero-banner .hero-banner-info .title {
+  font-size: 48px;
+}
+.hero-banner .hero-banner-info .position {
+  font-size: 20px;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+.hero-banner .hero-banner-info .hire-me {
+  background-color: #e9b949;
+  border-radius: 8px;
+  border-color: #e9b949;
+  display: inline-block;
+  padding: 5px 20px;
+  width: 100px;
+}
+.hero-banner .hero-banner-info .hire-me:hover {
+  background-color: transparent;
+}
+/* ABOUT SEC START */
+.aboutsec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+}
+#about .aboutsec .girlfoto,
+#about .aboutsec .text-about {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.girlfoto .girl-border img {
+  width: 200px;
+  border-radius: 5px;
+  position: relative;
+  bottom: -25px;
+  right: -25px;
+}
+.girlfoto .girl-border {
+  width: 200px;
+  border: 2px solid #e9b949;
+  border-radius: 5px;
+}
+.aboutsec .text-about {
+  flex-direction: column;
+  row-gap: 40px;
+}
+.aboutsec .title-about {
+  font-size: 30px;
+}
+.aboutsec .lineabout {
+  border: 2px solid #e9b949;
+  width: 70px;
+}
+.aboutsec .text-about button {
+  background-color: #e9b949;
+  border-radius: 8px;
+  border-color: #e9b949;
+  display: inline-block;
+  padding: 5px 20px;
+  width: 100px;
+}
+.aboutsec .text-about button:hover {
+  background-color: transparent;
+}
+/* ABOUT SEC END */
+.servsec {
+  height: 100vh;
+  flex-direction: column;
+  align-content: center;
+  row-gap: 30px;
+  background-color: rgb(218, 213, 213);
+}
+.servsec .title .title-services {
+  display: flex;
+  justify-content: center;
+}
+.servsec .lineserv {
+  border-bottom: 5px solid #e9b949;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+.block {
+  background-color: white;
+  /* margin: 20px; */
+  border-radius: 10px;
+  /* padding: 10px; */
+  text-align: center;
+}
+.servblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block:hover {
+  background-color: #e9b949;
+}
+.block:hover .icon {
+  color: white;
+}
+.block:hover h2 {
+  color: white;
+}
+.block:hover p {
+  color: white;
+}
+/* CONTACT SECTION */
+#contact {
+  height: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+#contact .endsec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+#contact .endsec ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+#contact .endsec ul a {
+  color: #e9b949;
+}
+.endsec p {
+  color: gray;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+@media only screen and (max-width: 991px) {
+  #hero-banner .hero-banner {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-banner {
+    height: 700px;
+  }
+  #hero-banner .hero-banner-info {
+    height: 300px;
+    align-items: center;
+  }
+  #about {
+    height: 1000px;
+  }
+  .aboutsec {
+    display: block;
+    flex-direction: column;
+  }
+  .aboutsec .girlfoto {
+    height: 400px;
+  }
+  #services {
+    height: 420px;
+  }
+  #services .servsec .servblock {
+    display: block;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #header {
+    display: block;
+  }
+  #header nav {
+    display: none;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+}

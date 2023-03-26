@@ -1,0 +1,66 @@
+h1 {
+  text-align: center;
+}
+#sec1 {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#sec2 {
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#sec3 {
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+button:hover {
+  background-color: white !important;
+  color: coral !important;
+}
+input:focus::-moz-placeholder {
+  color: red;
+}
+.form1 input:focus {
+  background-color: black;
+  color: white;
+}
+
+.foto1 {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin-left: 20%;
+  margin-right: none;
+}
+.foto2 {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  margin-right: 5%;
+  margin-left: none;
+}
+textarea {
+  resize: none;
+}
+#firstname {
+  width: 200%;
+}
+#lastname {
+  width: 200%;
+}
+#email {
+  width: 200%;
+}
+#password {
+  width: 200%;
+}

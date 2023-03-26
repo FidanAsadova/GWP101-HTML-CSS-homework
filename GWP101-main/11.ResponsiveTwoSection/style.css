@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Catamaran", sans-serif;
+}
+.countainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* BG GREY SECTION */
+header {
+  background-color: #f1f5f9;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: 30px;
+  color: #688f37;
+  font-weight: bold;
+}
+.title .title-one .inv-button {
+  padding: 5px;
+  background-color: #688f37;
+  border-color: #688f37;
+  color: white;
+  margin-top: 20px;
+}
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.tea span {
+  color: #688f37;
+  font-weight: bold;
+}
+.tea img {
+  height: 200px;
+  width: 250px;
+  border-radius: 8px;
+}
+.tea h4 {
+  font-weight: 1000px;
+}
+/* SEVICES SECTION */
+.services {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.sec-title h1 {
+  font-size: 40px;
+}
+.logo2 {
+  font-family: "Grand Hotel", cursive;
+  font-size: 30px;
+  color: #688f37;
+  font-weight: bold;
+  text-align: center;
+}
+.serv-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.sec-tea img {
+  height: 200px;
+  width: 250px;
+  border-radius: 8px;
+}
+.sec-tea {
+  width: 300px;
+  text-align: center;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+}
+.readm {
+  background-color: #688f37;
+  border-color: #688f37;
+  width: 100px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 991px) {
+  header {
+    padding: 30px;
+    height: 150vh;
+  }
+  .serv-foto {
+    display: block;
+    flex-direction: column;
+  }
+  .sec-tea {
+    margin-top: 30px;
+  }
+  .title-text {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .foto {
+    display: block;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 779px) {
+  *{
+    text-align: center;
+  }
+  header {
+    padding: 20px;
+    height: 300vh;
+  }
+  .title {
+    display: block;
+    flex-direction: column;
+  }
+  .tea{
+    margin-bottom: 30px;
+  }
+}
