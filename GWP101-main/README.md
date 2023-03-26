@@ -1,1 +1,3 @@
-This repo stores completed homework assignments.
+## Deployed Homeworks
+
+* 10.PortfolioMiniWebPage-https://helpful-conkies-0e2c96.netlify.app/
