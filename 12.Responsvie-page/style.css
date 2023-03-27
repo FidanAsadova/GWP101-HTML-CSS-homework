@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+header {
+  background-color: black;
+  padding: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li a {
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+header nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+/* SECTION 1 */
+#sec1 {
+  height: 100vh;
+  background-image: url(./image/forest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#sec1 .container .text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 700px;
+}
+#sec1 .container .text h2::after {
+  content: "";
+  border: 2px solid white;
+  display: block;
+  width: 60px;
+  position: relative;
+  right: -200px;
+}
+#sec1 .container .text h2 span {
+  color: brown;
+  text-shadow: 1px 1px 1px yellow;
+}
+/* SECTION 2 */
+#sec2 {
+  height: 100vh;
+  background-image: url(./image/sec2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* SECTION 3 */
+#sec3 {
+  height: 100vh;
+  margin-top: 10px;
+}
+#sec3 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sec3 .boxes {
+  height: 100vh;
+  margin: 10px;
+  border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.boxes .box1 {
+  background-color: brown;
+  z-index: 7;
+  top: 28%;
+  left: 40%;
+}
+.boxes .box2 {
+  background-color: gray;
+  z-index: -7;
+  left: 25%;
+  top: 30%;
+}
+.boxes .box3 {
+  background-color: darkblue;
+  z-index: 4;
+  top: 50%;
+  left: 32%;
+}
+.boxes .box4 {
+  background-color: bisque;
+  z-index: 3;
+  top: 55%;
+  left: 45%;
+}
+.boxes .box5 {
+  background-color: green;
+  z-index: -5;
+  top: 40%;
+  left: 54%;
+}
+@media only screen and (max-width: 767px) {
+  header nav ul li {
+    display: none;
+  }
+  header nav ul .home {
+    display: block;
+  }
+  header nav ul li.menu {
+    display: block;
+  }
+  #sec1 {
+    height: 100vh;
+    background-image: url(./image/sec2-res.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #sec1 .container .text {
+    display: none;
+  }
+  .box {
+    position: static;
+    height: 150px;
+    width: 150px;
+  }
+}
