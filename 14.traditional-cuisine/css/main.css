@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./bg-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .all {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .all .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .all .text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  color: white;
+  row-gap: 40px;
+}
+header .all .text h5 {
+  color: darkgoldenrod;
+  text-decoration: line-through;
+  font-size: 20px;
+}
+header .all .text h1 {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+header .all .text a {
+  background-color: rgba(231, 191, 141, 0.719);
+  padding: 20px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+}
+header .all .text a:hover {
+  background-color: rgba(128, 128, 128, 0.842);
+}
+header .all .hover-foto {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(15%, 23%);
+  transition: 2s;
+}
+header .all .hover-foto:hover {
+  transform: translate(15%, 50%);
+  transition: 2s;
+}
+header .all .hover-foto img {
+  width: 430px;
+  height: 430px;
+}
+header nav {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul li a {
+  color: white;
+  position: relative;
+}
+header nav ul li a:hover::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: red;
+  display: block;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
