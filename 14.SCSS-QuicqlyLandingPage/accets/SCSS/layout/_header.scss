@@ -1,0 +1,53 @@
+header {
+  background-color: $color-dark-green;
+  height: 75px;
+  margin: 0 auto;
+  .container {
+    .header {
+        .menu-icon {
+          display: none;
+        }
+      @include flexBox();
+      nav {
+        ul {
+          @include flexBox();
+          li {
+            padding: 25px 30px;
+            a {
+              color: $color-white;
+              font-family: $font-family;
+            }
+          }
+        }
+      }
+      .buttons {
+        display: flex;
+        .signup {
+          @extend %btn-dark-green;
+        }
+        .login {
+          @extend %btn-dark-green;
+          background-color: $color-dark-green;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  header {
+    .container {
+      .header {
+        nav {
+          display: none;
+        }
+        .buttons{
+            display: none;
+        }
+        .menu-icon {
+          display: block;
+        }
+      }
+    }
+  }
+}
