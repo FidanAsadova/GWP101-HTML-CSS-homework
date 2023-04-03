@@ -1,0 +1,45 @@
+.team {
+  height: 200vh;
+  background-color: $bg-grey;
+  .container {
+    .all-team {
+      .team-info {
+        @include flexBox();
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        h2 {
+          font-family: $font-family;
+          font-weight: $weight-700;
+          color: $dark;
+          height: 50px;
+          width: 570px;
+        }
+        p {
+          font-family: $font-family;
+          font-weight: 400;
+          color: $dark;
+          height: 48px;
+          width: 495px;
+          margin-top: 16px;
+        }
+      }
+      .team-members {
+        display: flex;
+        flex-direction: column;
+        @include flexBox();
+        justify-content: center;
+        gap: 100px;
+        .members-left, .members-right{
+          display: flex;
+          gap: 30px;
+        }
+        .card {
+          height: 250px;
+          width: 250px;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
