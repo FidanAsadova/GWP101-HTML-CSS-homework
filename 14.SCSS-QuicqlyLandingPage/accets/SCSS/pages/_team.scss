@@ -1,5 +1,5 @@
 .team {
-  height: 200vh;
+  height: 1200px;
   background-color: $bg-grey;
   .container {
     .all-team {
@@ -7,7 +7,8 @@
         @include flexBox();
         justify-content: center;
         flex-direction: column;
-        text-align: center;
+        // text-align: center;
+        margin-bottom: 64px;
         h2 {
           font-family: $font-family;
           font-weight: $weight-700;
@@ -22,22 +23,77 @@
           height: 48px;
           width: 495px;
           margin-top: 16px;
+          text-align: center;
         }
       }
       .team-members {
-        display: flex;
-        flex-direction: column;
         @include flexBox();
         justify-content: center;
-        gap: 100px;
-        .members-left, .members-right{
+        gap: 57px;
+        .members-left {
+          width: 50%;
           display: flex;
-          gap: 30px;
+          gap: 57px;
+          margin-bottom: 63px;
+        }
+        .members-right {
+          width: 50%;
+          display: flex;
+          gap: 57px;
+          margin-bottom: 63px;
         }
         .card {
-          height: 250px;
-          width: 250px;
           border-radius: 12px;
+          img {
+            margin-bottom: 16px;
+          }
+          h4 {
+            margin-bottom: 8px;
+          }
+          p {
+            margin-bottom: 30px;
+          }
+          .icon {
+            display: flex;
+            column-gap: 40px;
+            margin-bottom: 63px;
+            a {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .team{
+    height: 100%;
+    .container{
+      .all-team{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .team-members{
+          height: 100%;
+          display: block;
+          padding: 0 15%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+  .team{
+    .container{
+      .all-team{
+        .team-members{
+          .members-left, .members-right{
+            height: 100%;
+            width: 100%;
+            display: block;
+            margin: 0 15%;
+          }
         }
       }
     }
